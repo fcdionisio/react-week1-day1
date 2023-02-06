@@ -50,14 +50,19 @@ class App extends Component {
   
   render() {
     return (
-      <div class="App">
-        <h2>Image</h2>
+      <div >
+        <h2>My Photos</h2>
         {this.state.myPhotos.map((item,index) => {
           return (
-            <div>
-              <h2>{item.name}</h2>
-              <div> <img src={item.imageName} height={200} width={200}  /> </div>
-            </div>
+            
+              
+              
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}> 
+                <h2>{item.name}</h2>
+                <br />
+                <img src={item.imageName} height={200} width={200}  /> </div>
+        
+        
           );
         })};
 
